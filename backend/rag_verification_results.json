@@ -1,0 +1,152 @@
+[
+  {
+    "domain": "admin",
+    "query": "What is the tuition fee deadline and can I request a payment plan?",
+    "results": [
+      {
+        "id": "admin-3",
+        "text": "Domain: admin\nTitle: Tuition Fee and Deadline Policy\nTags: fees, deadline, payment plan\nBody: The standard tuition fee for this demo project is €3,000. The payment deadline is 15 October 2026. Students who need more flexibility may request a monthly payment plan from October to February through the administration portal.",
+        "score": 0.6754700520787021,
+        "metadata": {
+          "domain": "admin",
+          "tags": "fees, deadline, payment plan",
+          "title": "Tuition Fee and Deadline Policy",
+          "url": "https://studynest.local/policies/fees"
+        }
+      },
+      {
+        "id": "admin-2",
+        "text": "Domain: admin\nTitle: Required Enrollment Documents\nTags: documents, passport, insurance, visa\nBody: Typical enrollment documents include passport or ID, health insurance certificate, digital photo, and residence permit or visa page for international students. Missing documents should be uploaded before the due date shown in the student portal.",
+        "score": 0.41290757873154266,
+        "metadata": {
+          "domain": "admin",
+          "tags": "documents, passport, insurance, visa",
+          "title": "Required Enrollment Documents",
+          "url": "https://studynest.local/policies/documents"
+        }
+      },
+      {
+        "id": "admin-1",
+        "text": "Domain: admin\nTitle: Enrollment Status Policy\nTags: enrollment, status, conditional, blocked\nBody: A student can be marked as enrolled, conditional, or blocked. Conditional status usually means the student may continue temporarily while missing documents are being verified. Blocked status usually means an administrative hold remains unresolved.",
+        "score": 0.4039494411133563,
+        "metadata": {
+          "domain": "admin",
+          "tags": "enrollment, status, conditional, blocked",
+          "title": "Enrollment Status Policy",
+          "url": "https://studynest.local/policies/enrollment-status"
+        }
+      },
+      {
+        "id": "admin-4",
+        "text": "Domain: admin\nTitle: Support Escalation and Appointments\nTags: tickets, appointment, support\nBody: When an issue cannot be solved through self-service, the platform can create a support ticket and book an administrative advising appointment. The next available advising slot is shown automatically after booking.",
+        "score": 0.3808881110888477,
+        "metadata": {
+          "domain": "admin",
+          "tags": "tickets, appointment, support",
+          "title": "Support Escalation and Appointments",
+          "url": "https://studynest.local/policies/support"
+        }
+      }
+    ]
+  },
+  {
+    "domain": "learning",
+    "query": "I want beginner Python and SQL learning resources for data science.",
+    "results": [
+      {
+        "id": "learn-1",
+        "text": "Domain: learning\nTitle: Python for Data Science\nTags: python, data science, beginner\nBody: Level: beginner\nSkills: python, data cleaning, pandas\nSummary: Build Python fundamentals, data handling, and notebook workflow for data projects.\nProjects: CSV cleaning pipeline, Exploratory analysis notebook\nResource: https://www.learnpython.org/",
+        "score": 0.5912276373315939,
+        "metadata": {
+          "domain": "learning",
+          "tags": "python, data science, beginner",
+          "title": "Python for Data Science",
+          "url": "https://www.learnpython.org/"
+        }
+      },
+      {
+        "id": "learn-2",
+        "text": "Domain: learning\nTitle: Statistics and SQL Foundation\nTags: sql, statistics, analytics\nBody: Level: beginner\nSkills: sql, statistics, analytics\nSummary: Strengthen querying and analytical reasoning before advanced ML work.\nProjects: Student KPI dashboard, Retention SQL analysis\nResource: https://www.khanacademy.org/math/statistics-probability",
+        "score": 0.5253076761170432,
+        "metadata": {
+          "domain": "learning",
+          "tags": "sql, statistics, analytics",
+          "title": "Statistics and SQL Foundation",
+          "url": "https://www.khanacademy.org/math/statistics-probability"
+        }
+      },
+      {
+        "id": "learn-3",
+        "text": "Domain: learning\nTitle: Machine Learning Core\nTags: machine learning, classification, intermediate\nBody: Level: intermediate\nSkills: scikit-learn, classification, feature engineering\nSummary: Learn the full supervised ML workflow with model evaluation and feature engineering.\nProjects: Student risk prediction, Recommendation baseline system\nResource: https://scikit-learn.org/stable/user_guide.html",
+        "score": 0.4637399587794254,
+        "metadata": {
+          "domain": "learning",
+          "tags": "machine learning, classification, intermediate",
+          "title": "Machine Learning Core",
+          "url": "https://scikit-learn.org/stable/user_guide.html"
+        }
+      },
+      {
+        "id": "learn-4",
+        "text": "Domain: learning\nTitle: NLP and Text Analytics\nTags: nlp, embeddings, rag\nBody: Level: intermediate\nSkills: nlp, embeddings, sentiment analysis\nSummary: Use embeddings and text pipelines for feedback analysis and retrieval systems.\nProjects: Student feedback analyser, FAQ semantic search\nResource: https://huggingface.co/learn/nlp-course/chapter1/1",
+        "score": 0.4345950495696547,
+        "metadata": {
+          "domain": "learning",
+          "tags": "nlp, embeddings, rag",
+          "title": "NLP and Text Analytics",
+          "url": "https://huggingface.co/learn/nlp-course/chapter1/1"
+        }
+      }
+    ]
+  },
+  {
+    "domain": "peers",
+    "query": "Suggest peers interested in Python and machine learning.",
+    "results": [
+      {
+        "id": "peer-2",
+        "text": "Domain: peers\nTitle: Ben Kumar\nTags: peer, beginner, python\nBody: Level: beginner\nFocus: python, data science\nStrengths: Comfortable with starter Python notebooks and practice routines.\nReason: Useful study partner for someone building consistency in foundations.",
+        "score": 0.5511079077333264,
+        "metadata": {
+          "domain": "peers",
+          "tags": "peer, beginner, python",
+          "title": "Ben Kumar",
+          "url": ""
+        }
+      },
+      {
+        "id": "peer-1",
+        "text": "Domain: peers\nTitle: Alice Verma\nTags: peer, ml, python\nBody: Level: intermediate\nFocus: python, machine learning, projects\nStrengths: Strong ML basics and hands-on Kaggle style project experience.\nReason: Good match for students moving from basics into supervised ML.",
+        "score": 0.5472142299583251,
+        "metadata": {
+          "domain": "peers",
+          "tags": "peer, ml, python",
+          "title": "Alice Verma",
+          "url": ""
+        }
+      },
+      {
+        "id": "peer-3",
+        "text": "Domain: peers\nTitle: Chloe Singh\nTags: mentor, nlp, advanced\nBody: Level: advanced\nFocus: nlp, deep learning, research\nStrengths: Experienced with NLP pipelines, transformers, and experimentation.\nReason: Best mentor-style match for NLP or advanced AI project work.",
+        "score": 0.4507437722725111,
+        "metadata": {
+          "domain": "peers",
+          "tags": "mentor, nlp, advanced",
+          "title": "Chloe Singh",
+          "url": ""
+        }
+      },
+      {
+        "id": "peer-4",
+        "text": "Domain: peers\nTitle: Daniel Bauer\nTags: analytics, sql, peer\nBody: Level: intermediate\nFocus: sql, analytics, dashboards\nStrengths: Good at analytics storytelling, SQL, and data visualization.\nReason: Great peer for data analyst preparation and dashboard portfolios.",
+        "score": 0.42846695144168634,
+        "metadata": {
+          "domain": "peers",
+          "tags": "analytics, sql, peer",
+          "title": "Daniel Bauer",
+          "url": ""
+        }
+      }
+    ]
+  }
+]

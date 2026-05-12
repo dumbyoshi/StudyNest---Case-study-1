@@ -1,0 +1,30 @@
+[
+  {
+    "id": "admin-1",
+    "title": "Enrollment Status Policy",
+    "tags": ["enrollment", "status", "conditional", "blocked"],
+    "body": "A student can be marked as enrolled, conditional, or blocked. Conditional status usually means the student may continue temporarily while missing documents are being verified. Blocked status usually means an administrative hold remains unresolved.",
+    "url": "https://studynest.local/policies/enrollment-status"
+  },
+  {
+    "id": "admin-2",
+    "title": "Required Enrollment Documents",
+    "tags": ["documents", "passport", "insurance", "visa"],
+    "body": "Typical enrollment documents include passport or ID, health insurance certificate, digital photo, and residence permit or visa page for international students. Missing documents should be uploaded before the due date shown in the student portal.",
+    "url": "https://studynest.local/policies/documents"
+  },
+  {
+    "id": "admin-3",
+    "title": "Tuition Fee and Deadline Policy",
+    "tags": ["fees", "deadline", "payment plan"],
+    "body": "The standard tuition fee for this demo project is €3,000. The payment deadline is 15 October 2026. Students who need more flexibility may request a monthly payment plan from October to February through the administration portal.",
+    "url": "https://studynest.local/policies/fees"
+  },
+  {
+    "id": "admin-4",
+    "title": "Support Escalation and Appointments",
+    "tags": ["tickets", "appointment", "support"],
+    "body": "When an issue cannot be solved through self-service, the platform can create a support ticket and book an administrative advising appointment. The next available advising slot is shown automatically after booking.",
+    "url": "https://studynest.local/policies/support"
+  }
+]

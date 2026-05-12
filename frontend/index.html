@@ -1,0 +1,244 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>StudyNest Unified Open-Source AI Platform</title>
+  <style>
+    :root{
+      --bg:#0b1020; --panel:#121933; --panel2:#172142; --line:#2b3a6d;
+      --text:#eef2ff; --muted:#aab4d0; --accent:#6ea8fe; --accent2:#7ef0c8;
+      --warn:#ffd27a; --danger:#ff8585;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;background:radial-gradient(circle at top left,rgba(110,168,254,.12),transparent 28%),radial-gradient(circle at top right,rgba(126,240,200,.09),transparent 24%),linear-gradient(180deg,#09101f,#0f1730);min-height:100vh}
+    .layout{max-width:1380px;margin:0 auto;padding:24px;display:grid;grid-template-columns:360px 1fr;gap:20px}
+    .card{background:linear-gradient(180deg,rgba(255,255,255,.03),rgba(255,255,255,.015));border:1px solid var(--line);border-radius:24px;box-shadow:0 10px 30px rgba(0,0,0,.24)}
+    .sidebar{padding:18px;position:sticky;top:20px;height:fit-content}
+    .brand{display:flex;gap:12px;align-items:center;margin-bottom:18px}
+    .logo{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--accent),var(--accent2));box-shadow:0 8px 24px rgba(110,168,254,.30)}
+    h1{font-size:24px;margin:0}.sub{font-size:13px;color:var(--muted);margin-top:4px}
+    .field{margin-top:14px} label{display:block;font-size:12px;color:var(--muted);margin-bottom:6px} input,textarea,button,select{font:inherit}
+    .field input,.field textarea,.field select{width:100%;padding:12px 14px;border-radius:14px;border:1px solid var(--line);background:var(--panel);color:var(--text);outline:none}
+    .quick,.auth-box,.info-box{margin-top:18px;padding:14px;border-radius:18px;border:1px solid var(--line)}
+    .quick{background:rgba(110,168,254,.07)} .info-box{background:rgba(126,240,200,.04)}
+    .chip-row{display:flex;flex-wrap:wrap;gap:8px}.chip{border:1px solid var(--line);border-radius:999px;padding:8px 11px;background:var(--panel);color:var(--text);cursor:pointer;font-size:12px}
+    .mini-note{margin-top:12px;color:var(--muted);font-size:12px;line-height:1.5}
+    .main{display:grid;grid-template-rows:auto 1fr auto;min-height:90vh}.topbar{padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .topbar h2{margin:0;font-size:24px}.topbar p{margin:6px 0 0 0;color:var(--muted);font-size:13px}
+    .status{border:1px solid var(--line);border-radius:999px;padding:10px 14px;color:var(--muted);font-size:12px;background:rgba(126,240,200,.05)}
+    #chat{padding:0 20px 20px 20px;overflow:auto}.bubble{max-width:84%;padding:14px 16px;border-radius:18px;margin:12px 0;border:1px solid var(--line);white-space:pre-wrap;line-height:1.55}
+    .user{margin-left:auto;background:linear-gradient(180deg,#193266,#1b2d59)}.bot{background:linear-gradient(180deg,#111936,#0f1730)}
+    .meta{display:flex;align-items:center;gap:8px;margin-bottom:8px;font-size:12px;color:var(--muted);flex-wrap:wrap}.badge{padding:4px 8px;border-radius:999px;border:1px solid var(--line);background:rgba(110,168,254,.08);color:#d7e4ff;font-size:11px}
+    .trace{margin-top:10px;padding-top:10px;border-top:1px dashed rgba(255,255,255,.10);font-size:12px;color:var(--muted)}.action-row{display:flex;gap:8px;flex-wrap:wrap;margin:0 20px 12px}
+    .action-btn,.send,.clear,.mail-btn,.login-btn{border:none;border-radius:14px;padding:12px 16px;cursor:pointer;font-weight:600}.action-btn{background:rgba(255,255,255,.04);color:var(--text);border:1px solid var(--line);padding:8px 12px}
+    .composer{padding:16px 20px 20px 20px}.composer-box{border:1px solid var(--line);border-radius:18px;padding:12px;background:rgba(10,18,40,.78);display:grid;grid-template-columns:1fr auto;gap:10px}
+    textarea{min-height:78px;max-height:220px;resize:vertical;border-radius:14px;border:1px solid transparent;background:var(--panel);color:var(--text);padding:14px;outline:none}
+    .actions{display:flex;flex-direction:column;gap:10px}.send{background:linear-gradient(135deg,var(--accent),#8ab6ff);color:#07101f}.clear{background:transparent;color:var(--muted);border:1px solid var(--line)}.mail-btn{background:linear-gradient(135deg,var(--accent2),#8ef6d5);color:#041417}.login-btn{background:linear-gradient(135deg,#ffd27a,#ffb15a);color:#1a1200}
+    .auth-pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(126,240,200,.10);border:1px solid var(--line);font-size:12px;color:var(--muted)}
+    dialog{width:min(620px,92vw);border:none;border-radius:22px;padding:0;background:#11182f;color:var(--text);box-shadow:0 20px 50px rgba(0,0,0,.35)}
+    .modal-head{padding:18px 20px;border-bottom:1px solid var(--line)} .modal-body{padding:18px 20px}.grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.grid .full{grid-column:1 / -1}
+    .close-btn{background:transparent;color:var(--muted);border:1px solid var(--line);padding:10px 14px;border-radius:12px;cursor:pointer}.error{color:var(--danger);font-size:12px;margin-top:8px}
+    @media (max-width:980px){.layout{grid-template-columns:1fr}.sidebar{position:static}.bubble{max-width:92%}.grid{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="layout">
+    <aside class="card sidebar">
+      <div class="brand">
+        <div class="logo"></div>
+        <div>
+          <h1>StudyNest</h1>
+          <div class="sub">Administrative AI + Recommendation AI + RAG</div>
+        </div>
+      </div>
+
+      <div class="auth-box">
+        <div style="display:flex;justify-content:space-between;align-items:center;gap:10px">
+          <strong>Login</strong>
+          <span class="auth-pill" id="authStatus">Not logged in</span>
+        </div>
+        <div class="field"><label for="loginStudentId">Student ID</label><input id="loginStudentId" placeholder="e.g. s1001"></div>
+        <div class="field"><label for="loginPassword">Password</label><input id="loginPassword" type="password" placeholder="Enter password"></div>
+        <button class="login-btn" style="margin-top:12px;width:100%" id="loginBtn">Login</button>
+        <div class="mini-note">Demo passwords: <code>pass1001</code>, <code>pass1002</code>, <code>pass1003</code></div>
+        <div id="loginError" class="error"></div>
+      </div>
+
+      <div class="info-box">
+        <strong>Mode</strong>
+        <div class="field" style="margin-top:10px">
+          <label for="modeSelect">Choose AI route</label>
+          <select id="modeSelect">
+            <option value="auto">Auto route</option>
+            <option value="admin">Administrative AI Agent</option>
+            <option value="recommendation">Recommendation AI Agent</option>
+          </select>
+        </div>
+        <div class="mini-note">Auto mode sends student-support questions to the admin agent and roadmap or career questions to the recommendation agent.</div>
+      </div>
+
+      <div class="quick">
+        <strong>Quick prompts</strong>
+        <div class="chip-row" style="margin-top:10px">
+          <button class="chip" onclick="quickAsk('What is my enrollment status?')">Enrollment status</button>
+          <button class="chip" onclick="quickAsk('What documents am I missing?')">Missing documents</button>
+          <button class="chip" onclick="quickAsk('Give me a 3 month learning roadmap')">Roadmap</button>
+          <button class="chip" onclick="quickAsk('Suggest portfolio projects for my profile')">Projects</button>
+          <button class="chip" onclick="quickAsk('Recommend peers or mentors for me')">Peers</button>
+          <button class="chip" onclick="quickAsk('My enrollment is blocked and I need help')">Support issue</button>
+        </div>
+      </div>
+
+      <div class="mini-note">
+        Unified flow: login → shared session memory → route to admin or recommendation agent → tools → RAG retrieval → open-source LLM answer.
+      </div>
+    </aside>
+
+    <section class="card main">
+      <div class="topbar">
+        <div>
+          <h2>Unified Student AI Dashboard</h2>
+          <p>One dashboard for administrative help, learning recommendations, peer matching, project ideas, and grounded RAG-based answers.</p>
+        </div>
+        <div class="status">Backend: http://127.0.0.1:8000</div>
+      </div>
+
+      <div id="chat"></div>
+
+      <div class="composer">
+        <div class="composer-box">
+          <textarea id="message" placeholder="Ask about enrollment, documents, fees, roadmaps, projects, career roles, peers, or RAG-based recommendations..."></textarea>
+          <div class="actions">
+            <button class="send" id="sendBtn">Send</button>
+            <button class="clear" id="clearBtn">Clear</button>
+            <button class="mail-btn" id="openMailBtn">Email Organisation</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <dialog id="contactDialog">
+    <div class="modal-head"><strong>Further enquiry to organisation</strong></div>
+    <div class="modal-body">
+      <div class="grid">
+        <div class="field"><label>Name</label><input id="contactName" placeholder="Your full name"></div>
+        <div class="field"><label>Email</label><input id="contactEmail" placeholder="Your email address"></div>
+        <div class="field full"><label>Subject</label><input id="contactSubject" placeholder="Subject"></div>
+        <div class="field full"><label>Message</label><textarea id="contactMessage" placeholder="Describe your further enquiry"></textarea></div>
+      </div>
+      <div style="display:flex;gap:10px;justify-content:flex-end;margin-top:14px">
+        <button class="close-btn" onclick="document.getElementById('contactDialog').close()">Close</button>
+        <button class="mail-btn" onclick="submitEnquiry()">Send enquiry</button>
+      </div>
+    </div>
+  </dialog>
+
+<script>
+let sessionId = null;
+let currentStudentId = null;
+const chat = document.getElementById('chat');
+const sendBtn = document.getElementById('sendBtn');
+const clearBtn = document.getElementById('clearBtn');
+const openMailBtn = document.getElementById('openMailBtn');
+const loginBtn = document.getElementById('loginBtn');
+const messageBox = document.getElementById('message');
+const modeSelect = document.getElementById('modeSelect');
+
+function esc(text){return (text || '').replace(/[&<>\"]/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[m]));}
+
+function addBubble(text, who='bot', meta={}){
+  const div = document.createElement('div');
+  div.className = 'bubble ' + (who === 'user' ? 'user' : 'bot');
+  if(who === 'bot'){
+    const trace = Array.isArray(meta.tool_trace) && meta.tool_trace.length ? `<div class="trace"><strong>Tool trace:</strong> ${meta.tool_trace.map(esc).join(' → ')}</div>` : '';
+    div.innerHTML = `<div class="meta"><span class="badge">${esc(meta.agent_mode || 'unified-ai-agent')}</span><span class="badge">${esc(meta.intent || 'response')}</span></div><div>${esc(text).replace(/\n/g,'<br>')}</div>${trace}`;
+  } else {
+    div.innerHTML = `<div>${esc(text).replace(/\n/g,'<br>')}</div>`;
+  }
+  chat.appendChild(div);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+function addActions(actions){
+  if(!actions || !actions.length) return;
+  const row = document.createElement('div');
+  row.className = 'action-row';
+  actions.forEach(a => {
+    const btn = document.createElement('button');
+    btn.className = 'action-btn';
+    btn.textContent = a.label || 'Action';
+    btn.onclick = () => {
+      if(a.type === 'suggest' && a.payload){ messageBox.value = a.payload; sendBtn.click(); }
+      else if(a.type === 'open_contact'){ document.getElementById('contactDialog').showModal(); }
+    };
+    row.appendChild(btn);
+  });
+  chat.appendChild(row);
+  chat.scrollTop = chat.scrollHeight;
+}
+
+async function doLogin(){
+  const studentId = document.getElementById('loginStudentId').value.trim();
+  const password = document.getElementById('loginPassword').value.trim();
+  const errorEl = document.getElementById('loginError');
+  errorEl.textContent = '';
+  try{
+    const res = await fetch('http://127.0.0.1:8000/login', {method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify({student_id: studentId, password})});
+    if(!res.ok){ const err = await res.json(); throw new Error(err.detail || 'Login failed'); }
+    const data = await res.json();
+    sessionId = data.session_id;
+    currentStudentId = data.student.id;
+    document.getElementById('authStatus').textContent = 'Logged in: ' + data.student.name;
+    document.getElementById('loginStudentId').value = data.student.id;
+    document.getElementById('contactName').value = data.student.name;
+    document.getElementById('contactEmail').value = data.student.email;
+    addBubble(`Login successful. Welcome ${data.student.name}. Your saved target role is ${data.student.target_role || 'not set'}.`, 'bot', {intent:'login_success', agent_mode:'unified-ai-platform'});
+  }catch(e){ errorEl.textContent = e.message; }
+}
+
+async function ask(text){
+  addBubble(text, 'user');
+  const payload = {session_id: sessionId, student_id: currentStudentId || document.getElementById('loginStudentId').value || null, message: text, preferred_mode: modeSelect.value};
+  try{
+    const res = await fetch('http://127.0.0.1:8000/chat', {method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(payload)});
+    const data = await res.json();
+    sessionId = data.session_id;
+    addBubble(data.answer || '(no answer)', 'bot', data);
+    addActions(data.actions || []);
+  }catch(e){ addBubble('Backend not reachable. Start FastAPI first with: python -m uvicorn main:app --reload', 'bot', {intent:'system_error', agent_mode:'system'}); }
+}
+
+async function submitEnquiry(){
+  const payload = {student_id: currentStudentId || document.getElementById('loginStudentId').value || null, name: document.getElementById('contactName').value, email: document.getElementById('contactEmail').value, subject: document.getElementById('contactSubject').value, message: document.getElementById('contactMessage').value};
+  try{
+    const res = await fetch('http://127.0.0.1:8000/contact', {method: 'POST', headers: {'Content-Type':'application/json'}, body: JSON.stringify(payload)});
+    const data = await res.json();
+    document.getElementById('contactDialog').close();
+    addBubble(`Further enquiry sent successfully. Reference ID: ${data.enquiry_id}`, 'bot', {intent:'contact_org', agent_mode:'administrative-ai-agent-rag'});
+  }catch(e){ addBubble('Could not send the further enquiry. Please make sure the backend is running.', 'bot', {intent:'contact_org_error', agent_mode:'system'}); }
+}
+
+function quickAsk(text){ messageBox.value = text; sendBtn.click(); }
+function clearChat(){ chat.innerHTML = ''; seedWelcome(); }
+function seedWelcome(){
+  addBubble(`Welcome to the StudyNest Unified Open-Source AI Platform.
+This dashboard combines:
+• Administrative AI Agent
+• Recommendation AI Agent
+• RAG over admin and learning knowledge
+• open-source model support through Hugging Face
+
+Try asking about enrollment, missing documents, fees, roadmaps, project ideas, peer suggestions, or career roles.`, 'bot', {intent:'welcome', agent_mode:'unified-ai-platform'});
+}
+
+sendBtn.onclick = () => { const text = messageBox.value.trim(); if(!text) return; messageBox.value = ''; ask(text); };
+clearBtn.onclick = clearChat;
+openMailBtn.onclick = () => document.getElementById('contactDialog').showModal();
+loginBtn.onclick = doLogin;
+messageBox.addEventListener('keydown', (e) => { if(e.key === 'Enter' && !e.shiftKey){ e.preventDefault(); sendBtn.click(); } });
+seedWelcome();
+</script>
+</body>
+</html>

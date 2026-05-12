@@ -1,0 +1,38 @@
+[
+  {
+    "id": "peer-1",
+    "title": "Alice Verma",
+    "level": "intermediate",
+    "focus": ["python", "machine learning", "projects"],
+    "strengths": "Strong ML basics and hands-on Kaggle style project experience.",
+    "reason": "Good match for students moving from basics into supervised ML.",
+    "tags": ["peer", "ml", "python"]
+  },
+  {
+    "id": "peer-2",
+    "title": "Ben Kumar",
+    "level": "beginner",
+    "focus": ["python", "data science"],
+    "strengths": "Comfortable with starter Python notebooks and practice routines.",
+    "reason": "Useful study partner for someone building consistency in foundations.",
+    "tags": ["peer", "beginner", "python"]
+  },
+  {
+    "id": "peer-3",
+    "title": "Chloe Singh",
+    "level": "advanced",
+    "focus": ["nlp", "deep learning", "research"],
+    "strengths": "Experienced with NLP pipelines, transformers, and experimentation.",
+    "reason": "Best mentor-style match for NLP or advanced AI project work.",
+    "tags": ["mentor", "nlp", "advanced"]
+  },
+  {
+    "id": "peer-4",
+    "title": "Daniel Bauer",
+    "level": "intermediate",
+    "focus": ["sql", "analytics", "dashboards"],
+    "strengths": "Good at analytics storytelling, SQL, and data visualization.",
+    "reason": "Great peer for data analyst preparation and dashboard portfolios.",
+    "tags": ["analytics", "sql", "peer"]
+  }
+]

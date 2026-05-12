@@ -1,0 +1,213 @@
+{
+  "detailed_results": [
+    {
+      "case_id": "admin_1",
+      "model": "Qwen/Qwen3-8B",
+      "prompt": "A student missed the exam registration deadline. What should they do next? Give a clear and professional answer in 4 bullet points.",
+      "answer": "<think>\nOkay, the user is asking what a student should do if they missed the exam registration deadline. Let me break this down. First, I need to make sure the answer is clear and professional, as per the user's request. They want four bullet points.\n\nSo, the first thing that comes to mind is that the student should contact the academic office immediately. That's the most direct step. They need to explain the situation and ask about possible options. But wait, maybe I should mention specific departments, like the registrar's office or academic advising. That would be more precise.\n\nNext, the student might need to check if there's an appeal process. Some institutions allow appeals for missed deadlines, especially if there's a valid reason. I should include that as a second point. But I need to make sure the student knows to provide documentation if they have a valid reason, like a medical issue or family emergency.\n\nThird, the student should inquire about alternative arrangements. Maybe there's a late registration option, or they could take the exam at a different time if possible. It's important to mention that this depends on the institution's policies, so they should check with the relevant office.\n\nLastly, the student should monitor their academic calendar and deadlines for future exams. This is a proactive step to prevent similar issues. Also, advising them to stay in touch with their academic advisor could be helpful for ongoing support.\n\nWait, the user specified four bullet points. Let me structure each point clearly. Make sure each bullet is concise and actionable. Avoid jargon but keep it professional. Also, ensure that each step is a separate action without overlapping. Let me check if I covered all necessary aspects: contacting the right office, appealing if possible, alternative arrangements, and future planning. That seems comprehensive. Alright, time to put it all together in a clear, professional manner.\n</think>\n\n- **Contact the Academic Office Immediately**: Reach out to your institution’s registrar’s office or academic advising department to explain the situation and inquire about available options, such as late registration, exceptions, or alternative exam arrangements.  \n- **Check for Appeal or Exception Processes**: Determine if your institution allows appeals for missed deadlines, especially if there are extenuating circumstances (e.g., medical issues, family emergencies). Provide supporting documentation if applicable.  \n- **Explore Alternative Exam Options**: Inquire about potential solutions, such as retaking the exam at a later date, enrolling in a makeup session, or adjusting your course load for the next term if necessary.  \n- **Monitor Deadlines and Stay Proactive**: Ensure you understand future registration and exam dates to avoid similar issues. Stay in communication with your academic advisor for guidance on planning and compliance.",
+      "latency_seconds": 6.48,
+      "keyword_coverage": 0.75,
+      "semantic_similarity": 0.715,
+      "rag_faithfulness": 0.257,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "admin_1",
+      "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "prompt": "A student missed the exam registration deadline. What should they do next? Give a clear and professional answer in 4 bullet points.",
+      "answer": "If a student misses the exam registration deadline, they should follow these steps:\n\n1. **Contact the Academic Office or Advisor**: The student should immediately reach out to their academic advisor or the registrar's office to discuss their situation.\n\n2. **Provide an Explanation**: They should explain the reason for missing the deadline, especially if it was due to unforeseen circumstances, and provide any necessary documentation, such as a medical note.\n\n3. **Inquire About Late Registration**: The student should ask if late registration is possible, including any associated fees or required forms, and understand the timeline for action.\n\n4. **Discuss Academic Options**: They should explore alternative options, such as deferred exams or future registration opportunities, and discuss how this situation might",
+      "latency_seconds": 20.348,
+      "keyword_coverage": 0.75,
+      "semantic_similarity": 0.84,
+      "rag_faithfulness": 0.5,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "admin_1",
+      "model": "meta-llama/Llama-3.3-70B-Instruct",
+      "prompt": "A student missed the exam registration deadline. What should they do next? Give a clear and professional answer in 4 bullet points.",
+      "answer": "If a student has missed the exam registration deadline, they should take the following steps:\n\n* **Contact the Exams Office**: The student should reach out to the Exams Office as soon as possible to explain their situation and inquire about possible late registration options. They should be prepared to provide a valid reason for missing the deadline.\n* **Check for Late Registration Fees**: The student should be aware that late registration may incur additional fees, and they should be prepared to pay these fees if they are allowed to register late.\n* **Seek Approval from the Academic Department**: In some cases, the student may need to obtain approval from their academic department or faculty to register late for an exam. The student should be prepared to provide a compelling reason for missing the deadline and demonstrate that they are prepared for the exam.\n* **Review and Complete Any Required Documentation**: The student should review and complete any required documentation, such as a late registration form or a petition for exception, and submit it to the relevant authorities as soon as possible. They should ensure that all required documentation is complete and accurate to avoid any further delays.",
+      "latency_seconds": 1.091,
+      "keyword_coverage": 0.25,
+      "semantic_similarity": 0.81,
+      "rag_faithfulness": 1.0,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "recommend_1",
+      "model": "Qwen/Qwen3-8B",
+      "prompt": "Give me a 3-month roadmap to become a beginner data analyst. I know only basic Python and SQL.",
+      "answer": "<think>\nOkay, the user wants a 3-month roadmap to become a beginner data analyst, and they know basic Python and SQL. Let me break this down.\n\nFirst, I need to outline the key areas they should focus on. Since they already have some basics in Python and SQL, I can build on that. The main areas for a data analyst are data manipulation, data visualization, statistics, and tools like Excel and Tableau. Also, projects and portfolio are important for practical experience.\n\nMonth 1 should focus on foundational skills. They need to strengthen their Python and SQL skills. Maybe suggest learning pandas and advanced SQL queries. Also, introduce data visualization with libraries like Matplotlib and Seaborn. They should start with some basic projects, like analyzing a dataset from Kaggle.\n\nMonth 2 could be about expanding their toolset. Learning Excel and Tableau would be useful. They might also need to understand statistics and probability, which are crucial for data analysis. Including hypothesis testing and regression could be good. More projects here, maybe using real-world datasets to apply what they've learned.\n\nMonth 3 is about applying their skills in real-world scenarios. They should work on more complex projects, maybe a capstone project. Also, learning about data storytelling and presentation is important. They should start building a portfolio and prepare for interviews by practicing common questions.\n\nI should also mention resources like books, online courses, and communities. Maybe recommend specific platforms like Coursera, edX, or freeCodeCamp. It's important to emphasize consistent practice and building a portfolio. They might need to join communities like Reddit or Stack Overflow for support.\n\nWait, the user might not have mentioned their background beyond basic Python and SQL. Should I assume they have some programming experience or is it better to suggest resources for those with basic knowledge? Also, they might need to learn about data cleaning, which is a big part of data analysis. Maybe include that in the first month.\n\nI should structure each month with specific goals, learning topics, tools, and projects. Make sure the roadmap is realistic and not overwhelming. Maybe suggest dedicating a few hours each week to each area. Also, remind them to practice regularly and seek feedback on their projects.\n\nOh, and maybe include some tips on how to approach learning, like setting up a study schedule, using online communities, and staying motivated. It's important to balance theory with practice. They should not just learn the tools but also understand the concepts behind them.\n\nI need to check if there are any gaps. For example, data analysis often involves working with different data sources, so maybe mention data wrangling techniques. Also, understanding data ethics and privacy could be a plus, but maybe that's more advanced. Focus on the basics first.\n\nAlright, putting it all together into a structured 3-month plan with each month's focus areas, specific skills, tools, and projects. Make sure it's clear and actionable for someone with basic Python and SQL knowledge",
+      "latency_seconds": 4.462,
+      "keyword_coverage": 1.0,
+      "semantic_similarity": 0.739,
+      "rag_faithfulness": 0.3,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "recommend_1",
+      "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "prompt": "Give me a 3-month roadmap to become a beginner data analyst. I know only basic Python and SQL.",
+      "answer": "",
+      "latency_seconds": 20.974,
+      "keyword_coverage": 0.0,
+      "semantic_similarity": 0.0,
+      "rag_faithfulness": 0.0,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "recommend_1",
+      "model": "meta-llama/Llama-3.3-70B-Instruct",
+      "prompt": "Give me a 3-month roadmap to become a beginner data analyst. I know only basic Python and SQL.",
+      "answer": "As a beginner with basic Python and SQL knowledge, you're off to a great start. Here's a 3-month roadmap to help you become a beginner data analyst:\n\n**Month 1: Foundational Skills (Weeks 1-4)**\n\n1. **Data Analysis Fundamentals**:\n\t* Learn the basics of data analysis, including data types, data visualization, and statistical concepts.\n\t* Study resources: Data Analysis with Python (DataCamp), Data Analysis Tutorial (Kaggle)\n2. **Python Libraries**:\n\t* Familiarize yourself with popular Python libraries for data analysis:\n\t\t+ Pandas (data manipulation and analysis)\n\t\t+ NumPy (numerical computing)\n\t\t+ Matplotlib and Seaborn (data visualization)\n\t* Practice using these libraries with sample datasets.\n3. **SQL Practice**:\n\t* Continue to improve your SQL skills by practicing with online platforms like:\n\t\t+ LeetCode (SQL problems)\n\t\t+ HackerRank (SQL challenges)\n\t\t+ SQL Fiddle (practice with sample databases)\n4. **Data Visualization**:\n\t* Learn the basics of data visualization using Python libraries like Matplotlib and Seaborn.\n\t* Practice creating simple visualizations with sample datasets.\n\n**Month 2: Data Analysis and Visualization (Weeks 5-8)**\n\n1. **Data Cleaning and Preprocessing**:\n\t* Learn techniques for handling missing data, data normalization, and data transformation.\n\t* Practice using Pandas and NumPy for data cleaning and preprocessing.\n2. **Data Visualization with Python**:\n\t* Dive deeper into data visualization using Python libraries like Plotly, Bokeh, or Altair.\n\t* Create interactive visualizations and practice storytelling with data.\n3. **Statistical Concepts**:\n\t* Study basic statistical concepts, including:\n\t\t+ Descriptive statistics (mean, median, mode)\n\t\t+ Inferential statistics (hypothesis testing, confidence intervals)\n\t* Use Python libraries like SciPy and Statsmodels to practice statistical analysis.\n4. **Case Studies and Projects**:\n\t* Apply your skills to real-world case studies or projects, such as:\n\t\t+ Analyzing a sample dataset (e.g., Titanic, Iris)\n\t\t+ Creating a data visualization dashboard\n\n**Month 3: Advanced Topics and Practice (Weeks 9-12)**\n\n1. **Machine Learning Fundamentals**:\n\t* Introduce yourself to basic machine learning concepts, including:\n\t\t+ Supervised and unsupervised learning\n\t\t+ Regression, classification, and clustering\n\t* Use Python libraries like Scikit-learn to practice machine learning.\n2. **Data Storytelling and Communication**:\n\t* Learn how to effectively communicate insights and results to stakeholders.\n\t* Practice creating reports, presentations, and dashboards to showcase your findings.\n3. **Advanced Data Visualization**:\n\t* Explore advanced data visualization techniques, such",
+      "latency_seconds": 2.434,
+      "keyword_coverage": 1.0,
+      "semantic_similarity": 0.729,
+      "rag_faithfulness": 0.407,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "mixed_1",
+      "model": "Qwen/Qwen3-8B",
+      "prompt": "Tell me what documents are usually needed for enrollment and also suggest the core skills needed for a data analytics job.",
+      "answer": "<think>\nOkay, the user is asking about enrollment documents and core skills for a data analytics job. Let me break this down.\n\nFirst, enrollment documents. They might be a student looking to apply to a university program or someone applying for a job. Wait, the user mentioned both enrollment and job skills. Maybe they're a student considering a data analytics program and also looking to get a job in that field. So I need to cover both aspects.\n\nFor enrollment, common documents usually include academic transcripts, proof of language proficiency (like TOEFL for non-native speakers), recommendation letters, a statement of purpose, and maybe a resume. Some programs might require an interview or specific tests. I should list these and mention that requirements vary by institution.\n\nThen, core skills for a data analytics job. They need technical skills like programming (Python, R), data manipulation with tools like SQL, data visualization (Tableau, Power BI), statistical analysis, and machine learning. Also, soft skills like communication and problem-solving are important. Maybe mention tools like Excel, databases, and cloud platforms like AWS or Google Cloud. Oh, and domain knowledge in the industry they're targeting.\n\nWait, the user might be a student who's about to enroll and also wants to prepare for a job. So the answer should be comprehensive but clear. Make sure to separate the two parts and provide examples for each. Also, check if there's any overlap or if they need more details. Maybe add tips on how to build these skills, like online courses or certifications. But the user didn't ask for that, so maybe just list the skills. Alright, structure the answer with clear sections for enrollment documents and core skills, and mention that requirements can vary.\n</think>\n\n### **Documents Usually Needed for Enrollment**  \nWhen applying to a university program (e.g., a data analytics degree or related field), the required documents may vary by institution, but common ones include:  \n1. **Academic Transcripts**: Official records of your previous education (high school or undergraduate).  \n2. **Language Proficiency Proof**: For non-native English speakers, tests like TOEFL, IELTS, or PTE.  \n3. **Statement of Purpose (SOP)**: A personal essay outlining your academic goals, interests, and reasons for choosing the program.  \n4. **Letters of Recommendation**: Typically 1–3 letters from professors, employers, or mentors.  \n5. **Resume/CV**: Highlighting relevant coursework, projects, internships, or work experience.  \n6. **Standardized Test Scores**: Some programs may require GRE, GMAT, or specific subject tests (e.g., TOEFL for international students).  \n7. **Proof of Financial Support**: For international students, documents like bank statements or sponsorship letters.  \n8. **Portfolio or Project Work**: For applied programs, showcasing data analysis projects or coding samples.  \n9. **Interview or Written Test**: Some programs may require",
+      "latency_seconds": 4.214,
+      "keyword_coverage": 0.8,
+      "semantic_similarity": 0.771,
+      "rag_faithfulness": 0.227,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "mixed_1",
+      "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "prompt": "Tell me what documents are usually needed for enrollment and also suggest the core skills needed for a data analytics job.",
+      "answer": "**University Enrollment Documents:**\n\n1. **",
+      "latency_seconds": 20.97,
+      "keyword_coverage": 0.2,
+      "semantic_similarity": 0.391,
+      "rag_faithfulness": 0.5,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "mixed_1",
+      "model": "meta-llama/Llama-3.3-70B-Instruct",
+      "prompt": "Tell me what documents are usually needed for enrollment and also suggest the core skills needed for a data analytics job.",
+      "answer": "As a university administrative and recommendation assistant, I'd be happy to help you with the documents required for enrollment and the core skills needed for a data analytics job.\n\n**Documents Required for Enrollment:**\n\nThe specific documents required for enrollment may vary depending on the institution and program you're applying to. However, here are some common documents that are typically required:\n\n1. **Transcripts**: Official transcripts from your previous academic institutions, including high school and any previous colleges or universities.\n2. **Diploma or Certificate**: A copy of your high school diploma or equivalent certificate.\n3. **Standardized Test Scores**: Scores from standardized tests such as the SAT, ACT, GRE, or GMAT, depending on the program and institution.\n4. **Letters of Recommendation**: Typically 2-3 letters from academic or professional references who can speak to your skills and abilities.\n5. **Personal Statement or Essay**: A written statement outlining your academic and career goals, and why you're interested in the program.\n6. **Proof of English Proficiency**: If English is not your first language, you may need to provide proof of English proficiency through tests such as TOEFL or IELTS.\n7. **Identification Documents**: A copy of your government-issued ID, such as a passport or driver's license.\n8. **Financial Documents**: Proof of financial support, such as bank statements or scholarship awards, to demonstrate your ability to pay tuition and living expenses.\n\n**Core Skills Needed for a Data Analytics Job:**\n\nTo be successful in a data analytics role, you'll need to possess a combination of technical, business, and soft skills. Here are some of the core skills required:\n\n1. **Technical Skills**:\n\t* Programming languages: Python, R, SQL, and Julia\n\t* Data visualization tools: Tableau, Power BI, or D3.js\n\t* Statistical analysis: regression, hypothesis testing, and confidence intervals\n\t* Data manipulation: data cleaning, transformation, and feature engineering\n2. **Business Acumen**:\n\t* Understanding of business operations and market trends\n\t* Ability to communicate insights and recommendations to stakeholders\n\t* Familiarity with industry-specific data sources and systems\n3. **Data Analysis and Interpretation**:\n\t* Ability to collect, analyze, and interpret large datasets\n\t* Understanding of data modeling and machine learning algorithms\n\t* Familiarity with data mining and text analysis techniques\n4. **Communication and Collaboration**:\n\t* Effective communication of complex data insights to non-technical stakeholders\n\t* Ability to work collaboratively with cross-functional teams\n\t* Strong presentation and storytelling skills\n5. **Problem-Solving and Critical Thinking**:\n\t* Ability to identify and frame business problems\n\t* Critical thinking and analytical skills to develop and evaluate solutions\n\t* Creativity and resourcefulness in solving complex data problems\n6. **Adaptability and Continuous Learning**:\n\t* Willingness to learn new",
+      "latency_seconds": 2.212,
+      "keyword_coverage": 0.8,
+      "semantic_similarity": 0.587,
+      "rag_faithfulness": 0.37,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "multilingual_1",
+      "model": "Qwen/Qwen3-8B",
+      "prompt": "Explain the exam registration process in simple English and then briefly in German.",
+      "answer": "<think>\nOkay, the user wants me to explain the exam registration process in simple English and then briefly in German. Let me start by breaking down the steps. First, I need to make sure I understand the process thoroughly. Typically, exam registration involves checking the schedule, choosing exams, paying fees, and confirming registration. But I should keep it simple and avoid jargon.\n\nWait, maybe I should outline the main steps clearly. Let me think: check the exam dates and times, select the exams you need to take, pay any required fees, and then confirm your registration. That seems straightforward. I should mention that deadlines are important to avoid issues. Also, maybe include that some exams might require additional steps like submitting documents or attending an orientation.\n\nNow, translating that into simple English. Use short sentences and everyday language. Avoid technical terms. For example, instead of \"registration period,\" say \"time to sign up.\" Make sure each step is clear and easy to follow.\n\nNext, the German part. I need to translate the same steps but keep it brief. Use simple German words. Maybe start with \"Prüfungsanmeldung\" as the main term. Check the steps again: check dates, choose exams, pay fees, confirm. In German, that would be \"Prüfungsdatum prüfen,\" \"Prüfungen auswählen,\" \"Gebühren zahlen,\" and \"Anmeldung bestätigen.\" Make sure the verbs are in the correct form and the sentences are concise.\n\nWait, should I mention deadlines in German too? The user said \"briefly,\" so maybe just the main steps without extra details. Also, ensure that the German translation is accurate and uses the correct terminology. For example, \"pay fees\" becomes \"Gebühren zahlen,\" which is correct.\n\nLet me double-check the German translation for clarity. \"Prüfungsdatum prüfen\" – that's \"check the exam date.\" \"Prüfungen auswählen\" – \"select exams.\" \"Gebühren zahlen\" – \"pay fees.\" \"Anmeldung bestätigen\" – \"confirm registration.\" That seems right. Maybe add a note about deadlines in German as well, but since it's brief, perhaps it's okay to omit it unless necessary.\n\nI should also make sure the German text is in the same structure as the English one, so the user can easily compare. Keep each step on a new line or separate sentences. Avoid any complex sentences. Use simple present tense for instructions.\n\nAlright, I think that covers it. Let me put it all together now.\n</think>\n\n**In simple English:**  \n1. Check the exam dates and times.  \n2. Choose the exams you need to take.  \n3. Pay any required fees.  \n4. Confirm your registration by the deadline.  \n\n**In brief German:**  \n1. Prüfungsdatum prüfen.  \n2. Pr",
+      "latency_seconds": 3.913,
+      "keyword_coverage": 1.0,
+      "semantic_similarity": 0.42,
+      "rag_faithfulness": 0.16,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "multilingual_1",
+      "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "prompt": "Explain the exam registration process in simple English and then briefly in German.",
+      "answer": "**Exam Registration Process: Simple English Explanation**\n\n1. **Log In**: Access your university's online portal using your credentials.\n2. **Check Exams**: Review the list of available exams for your courses",
+      "latency_seconds": 20.902,
+      "keyword_coverage": 0.5,
+      "semantic_similarity": 0.378,
+      "rag_faithfulness": 0.25,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "multilingual_1",
+      "model": "meta-llama/Llama-3.3-70B-Instruct",
+      "prompt": "Explain the exam registration process in simple English and then briefly in German.",
+      "answer": "**English Explanation:**\nTo register for an exam, follow these steps:\n1. Check the exam schedule to know when and where your exam is.\n2. Make sure you are eligible to take the exam by checking your course requirements.\n3. Log in to the university's online portal or student system.\n4. Find the exam registration section and select the exam you want to register for.\n5. Fill in the required information and submit your registration.\n6. Print or save your registration confirmation as proof.\n\n**German Explanation (Kurz):**\nUm dich für eine Prüfung anzumelden, folge diesen Schritten:\n1. Überprüfe den Prüfungsplan.\n2. Stelle sicher, dass du berechtigt bist, die Prüfung abzulegen.\n3. Melde dich im Online-Portal oder Studentensystem an.\n4. Wähle die Prüfung aus und melde dich an.\n5. Bestätige deine Anmeldung und speichere den Nachweis.",
+      "latency_seconds": 1.088,
+      "keyword_coverage": 1.0,
+      "semantic_similarity": 0.281,
+      "rag_faithfulness": 0.273,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "rag_policy_1",
+      "model": "Qwen/Qwen3-8B",
+      "prompt": "Using the retrieved context, explain the tuition fee deadline policy and whether a payment plan can be requested.",
+      "answer": "<think>\nOkay, the user is asking about the tuition fee deadline policy and whether a payment plan can be requested. Let me start by recalling the information from the retrieved context.\n\nFirst, the tuition fee deadline policy. The context mentions that the deadline is typically set for the start of the semester, and students must pay by that date to avoid late fees. If they don't pay on time, there might be penalties. But I need to check if there are any exceptions or specific details like how late fees are calculated.\n\nNext, the payment plan. The context states that students can request a payment plan, but it's subject to approval. The process usually involves submitting a form to the financial aid office, and there might be specific criteria like financial hardship or academic standing. Also, there could be a limit on the number of installments or a requirement to pay a certain percentage upfront.\n\nWait, the user might be a student who's worried about missing the deadline. They might be concerned about the consequences of late payment and whether they can spread the cost. I should make sure to explain the deadline clearly, mention the penalties, and then outline the payment plan options, including how to apply and any conditions. Also, maybe include contact information for the financial aid office in case they need more details. Let me structure this step by step to ensure clarity.\n</think>\n\n**Tuition Fee Deadline Policy:**  \nThe tuition fee deadline is typically set for the **start of the academic semester** (e.g., the first day of classes). Students are required to pay their tuition fees by this date to avoid **late fees** or potential **registration hold** issues. If payment is not received by the deadline, the university may impose a **late fee** (e.g., 1.5% of the tuition amount per month) or restrict access to academic resources, such as course registration or exams.  \n\n**Payment Plan Request:**  \nYes, students can request a **tuition payment plan** to spread payments over multiple installments. To qualify, students must:  \n1. Submit a formal request to the **Financial Aid Office** or **Bursar’s Office** (specific procedures may vary by institution).  \n2. Demonstrate **financial hardship** (e.g., through income documentation or a hardship form).  \n3. Meet eligibility criteria (e.g., enrollment status, academic standing).  \n\nPayment plans often require:  \n- A **minimum initial payment** (e.g., 50% of the total tuition).  \n- A **fixed number of installments** (e.g., 3–6 payments).  \n- A **processing fee** (if applicable).  \n\n**Important Notes:**  \n- Approval is not guaranteed and depends on institutional policies and available resources.  \n- Payment plans may not be available for international students or those with outstanding balances.  \n- Students should contact the **Financial Aid Office** directly for specific deadlines, forms, and eligibility details.  \n\nFor further assistance",
+      "latency_seconds": 4.078,
+      "keyword_coverage": 1.0,
+      "semantic_similarity": 0.771,
+      "rag_faithfulness": 0.489,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "rag_policy_1",
+      "model": "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B",
+      "prompt": "Using the retrieved context, explain the tuition fee deadline policy and whether a payment plan can be requested.",
+      "answer": "**Tuition Fee Deadline Policy and Payment Plan Options**\n\n**Tuition Fee Deadline Policy:**\n- **Deadline Timing:** Tuition fees must be paid by the deadline, which is typically two weeks before the start of the semester.\n- **Weekend Extension:** If the deadline falls on a weekend, it is extended to the next business day.\n- **Late Fee:** A $50 late fee applies if payment is not made by the deadline.\n\n**Payment Plan Options:**\n- **Eligibility:** Students who cannot pay the full tuition by the deadline may request a payment plan.\n- **Request Process:** A written request must be submitted to the Office of Student Accounts.\n- **Plan Terms:** The payment plan allows for monthly payments, with terms tailored to the student's financial situation.\n- **Responsibility:** While a payment plan",
+      "latency_seconds": 20.938,
+      "keyword_coverage": 1.0,
+      "semantic_similarity": 0.769,
+      "rag_faithfulness": 0.857,
+      "format_compliance": 1.0,
+      "error": ""
+    },
+    {
+      "case_id": "rag_policy_1",
+      "model": "meta-llama/Llama-3.3-70B-Instruct",
+      "prompt": "Using the retrieved context, explain the tuition fee deadline policy and whether a payment plan can be requested.",
+      "answer": "As a university administrative and recommendation assistant, I'd be happy to explain our tuition fee deadline policy and payment plan options.\n\n**Tuition Fee Deadline Policy:**\nThe tuition fee deadline is typically set at the beginning of each semester. It is essential to pay your tuition fees by the specified deadline to avoid any late payment penalties or registration holds. The deadline is usually around 2-3 weeks after the start of the semester, but please check the university's website or your student portal for the exact date.\n\n**Late Payment Penalties:**\nIf you fail to pay your tuition fees by the deadline, you may be subject to late payment penalties, which can include:\n\n* A late payment fee, which is a percentage of your outstanding tuition fee balance\n* A registration hold, which can prevent you from accessing your course materials, attending classes, or graduating\n* Interest charges on your outstanding balance\n\n**Payment Plan Options:**\nWe understand that paying tuition fees in full by the deadline can be challenging for some students. To help with this, we offer payment plan options that allow you to split your tuition fees into manageable installments.\n\nYou can request a payment plan by:\n\n1. Logging into your student portal and submitting a payment plan request form\n2. Contacting our student finance team directly via phone or email\n3. Visiting our student finance office in person\n\n**Payment Plan Terms:**\nOur payment plans typically allow you to pay your tuition fees in 2-4 installments, depending on the semester and your individual circumstances. The payment plan terms will be outlined in your payment plan agreement, which you will need to sign and return to us.\n\n**Important Notes:**\nPlease note that payment plans are subject to approval, and you may be required to pay a payment plan fee. Additionally, if you default on your payment plan, you may be subject to late payment penalties and interest charges.\n\nI hope this information helps! If you have any further questions or concerns, please don't hesitate to reach out to our student finance team. We're here to help.",
+      "latency_seconds": 1.851,
+      "keyword_coverage": 1.0,
+      "semantic_similarity": 0.698,
+      "rag_faithfulness": 0.867,
+      "format_compliance": 1.0,
+      "error": ""
+    }
+  ],
+  "summary": {
+    "Qwen/Qwen3-8B": {
+      "avg_latency_seconds": 4.629,
+      "avg_keyword_coverage": 0.91,
+      "avg_semantic_similarity": 0.683,
+      "avg_rag_faithfulness": 0.287,
+      "avg_format_compliance": 1.0,
+      "failure_rate": 0.0,
+      "final_weighted_score": 0.7244
+    },
+    "deepseek-ai/DeepSeek-R1-Distill-Qwen-32B": {
+      "avg_latency_seconds": 20.826,
+      "avg_keyword_coverage": 0.49,
+      "avg_semantic_similarity": 0.476,
+      "avg_rag_faithfulness": 0.421,
+      "avg_format_compliance": 1.0,
+      "failure_rate": 0.0,
+      "final_weighted_score": 0.5299
+    },
+    "meta-llama/Llama-3.3-70B-Instruct": {
+      "avg_latency_seconds": 1.735,
+      "avg_keyword_coverage": 0.81,
+      "avg_semantic_similarity": 0.621,
+      "avg_rag_faithfulness": 0.583,
+      "avg_format_compliance": 1.0,
+      "failure_rate": 0.0,
+      "final_weighted_score": 0.7631
+    }
+  }
+}

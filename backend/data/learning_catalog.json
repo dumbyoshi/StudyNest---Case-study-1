@@ -1,0 +1,62 @@
+[
+  {
+    "id": "learn-1",
+    "title": "Python for Data Science",
+    "level": "beginner",
+    "skills": ["python", "data cleaning", "pandas"],
+    "summary": "Build Python fundamentals, data handling, and notebook workflow for data projects.",
+    "projects": ["CSV cleaning pipeline", "Exploratory analysis notebook"],
+    "resource_url": "https://www.learnpython.org/",
+    "tags": ["python", "data science", "beginner"]
+  },
+  {
+    "id": "learn-2",
+    "title": "Statistics and SQL Foundation",
+    "level": "beginner",
+    "skills": ["sql", "statistics", "analytics"],
+    "summary": "Strengthen querying and analytical reasoning before advanced ML work.",
+    "projects": ["Student KPI dashboard", "Retention SQL analysis"],
+    "resource_url": "https://www.khanacademy.org/math/statistics-probability",
+    "tags": ["sql", "statistics", "analytics"]
+  },
+  {
+    "id": "learn-3",
+    "title": "Machine Learning Core",
+    "level": "intermediate",
+    "skills": ["scikit-learn", "classification", "feature engineering"],
+    "summary": "Learn the full supervised ML workflow with model evaluation and feature engineering.",
+    "projects": ["Student risk prediction", "Recommendation baseline system"],
+    "resource_url": "https://scikit-learn.org/stable/user_guide.html",
+    "tags": ["machine learning", "classification", "intermediate"]
+  },
+  {
+    "id": "learn-4",
+    "title": "NLP and Text Analytics",
+    "level": "intermediate",
+    "skills": ["nlp", "embeddings", "sentiment analysis"],
+    "summary": "Use embeddings and text pipelines for feedback analysis and retrieval systems.",
+    "projects": ["Student feedback analyser", "FAQ semantic search"],
+    "resource_url": "https://huggingface.co/learn/nlp-course/chapter1/1",
+    "tags": ["nlp", "embeddings", "rag"]
+  },
+  {
+    "id": "learn-5",
+    "title": "RAG and AI Agent Design",
+    "level": "advanced",
+    "skills": ["rag", "vector search", "tool use"],
+    "summary": "Design retrieval pipelines and agent workflows for grounded AI applications.",
+    "projects": ["University policy copilot", "Multi-agent student dashboard"],
+    "resource_url": "https://huggingface.co/docs/transformers/tasks/question_answering",
+    "tags": ["rag", "agents", "advanced"]
+  },
+  {
+    "id": "learn-6",
+    "title": "MLOps and Deployment Basics",
+    "level": "intermediate",
+    "skills": ["fastapi", "deployment", "api design"],
+    "summary": "Package models into APIs and dashboards that are easy to deploy and demo.",
+    "projects": ["FastAPI model endpoint", "Dashboard deployment checklist"],
+    "resource_url": "https://fastapi.tiangolo.com/",
+    "tags": ["fastapi", "deployment", "mlops"]
+  }
+]

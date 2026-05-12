@@ -1,0 +1,37 @@
+[
+  {
+    "id": "admin_1",
+    "prompt": "A student missed the exam registration deadline. What should they do next? Give a clear and professional answer in 4 bullet points.",
+    "reference_answer": "The student should contact the registrar or academic office immediately, explain the missed deadline, ask whether late registration is possible, and prepare any required supporting documents.",
+    "required_keywords": ["registrar", "academic office", "late registration", "documents"],
+    "retrieved_context": "Students who miss registration deadlines should contact the academic office immediately. Late registration may be possible only in exceptional cases with supporting documents."
+  },
+  {
+    "id": "recommend_1",
+    "prompt": "Give me a 3-month roadmap to become a beginner data analyst. I know only basic Python and SQL.",
+    "reference_answer": "A beginner data analyst roadmap should start with strengthening SQL and statistics, followed by data cleaning, Python for analysis, visualization, dashboard practice, and portfolio projects.",
+    "required_keywords": ["SQL", "statistics", "visualization", "projects"],
+    "retrieved_context": "A beginner roadmap includes SQL, statistics, Python for analysis, dashboard tools, and portfolio projects."
+  },
+  {
+    "id": "mixed_1",
+    "prompt": "Tell me what documents are usually needed for enrollment and also suggest the core skills needed for a data analytics job.",
+    "reference_answer": "Typical enrollment-related documents include ID, academic certificates, and supporting forms, while data analytics skills include SQL, statistics, Python, Excel, and visualization.",
+    "required_keywords": ["documents", "SQL", "statistics", "Python", "visualization"],
+    "retrieved_context": "Administrative guidance mentions ID and academic documents for enrollment. Learning guidance recommends SQL, statistics, Python, and dashboard or visualization skills for analytics roles."
+  },
+  {
+    "id": "multilingual_1",
+    "prompt": "Explain the exam registration process in simple English and then briefly in German.",
+    "reference_answer": "The answer should explain the process simply in English and then provide a brief German summary.",
+    "required_keywords": ["English", "German"],
+    "retrieved_context": "Students should complete exam registration before the deadline using the official process. The explanation can be delivered in simple English and also briefly in German."
+  },
+  {
+    "id": "rag_policy_1",
+    "prompt": "Using the retrieved context, explain the tuition fee deadline policy and whether a payment plan can be requested.",
+    "reference_answer": "The answer should mention the tuition fee deadline and state whether a payment plan can be requested according to the retrieved policy context.",
+    "required_keywords": ["tuition", "deadline", "payment plan"],
+    "retrieved_context": "Tuition fees should be paid before the stated deadline. Students with financial difficulty may contact the finance office to ask whether a payment plan or exception procedure is available."
+  }
+]
